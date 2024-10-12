@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: purple;
+    --primary-font: "Krona one", sans-serif;
+    --second-font: "Montserrat", sans-serif;
+}
+
+html,body {
+    box-sizing: border-box;
+    color: white;
+    font-family: "Krona one", sans-serif;
+    text-decoration: none;
+    overflow: hidden;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.900), rgba(0, 0, 0, 0.900)), url(/images/lillyhalloween.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* HEADER */
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    gap: 225px;
+
+    /* background-color: #ff005dab; */
+    /* background-color: #85123c;  */
+    background-color: #B02D48;
+    /* background-color: rgba(124, 20, 93, 0.712); */
+
+    padding: 1.5% 0% 1.5% 0%;
+}
+
+.header-main-content {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+
+    margin: 0% 0% 0% 3.5%;
+}
+
+.header-text {
+    text-transform: uppercase;
+    color: white;
+    transition: .2s;
+    text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.644)
+}
+
+.header-text:hover {
+    transform: scale(1.2);
+    transform: rotate(-2deg);
+}
+
+.header-logo {
+    width: 6%;
+    transition: .4s;
+    text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.644)
+}
+
+.header-logo:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+    transform: rotate(20deg);
+}
+
+.header-main-pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+
+    list-style-type: none;
+    text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.644)
+}
+
+.list {
+    transition: .2s;
+}
+
+.list:hover {
+    transform: scale(1.1);
+}
+
+.pages-list {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+}
+
+.pages-list:hover {
+    transform: scale(1.05);
+}
+
+/* MAIN SECTION */
+
+.section-main-container {
+    width: auto;
+    height: 100vh;
+}
+
+.section-main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 95px;
+    padding: 5.5% 15% 0% 15%;
+}
+
+.section-main-logo {
+    width: 38%;
+    border-radius: 150px;
+    transition: .2s;
+}
+
+.section-main-logo:hover {
+    transform: scale(1.05);
+}
+
+.section-main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text-title {
+    text-transform: uppercase;
+}
+
+.text-desc {
+    font-family: var(--second-font);
+    font-size: 1.2rem;
+}
